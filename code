@@ -1,0 +1,15 @@
+def battery_charge(charge_percent):
+    charge_bar = round(charge_percent/10)
+    
+    bars = ['❚' * charge_bar, ' ' * (10 - charge_bar)]
+    
+    print ('[' + bars[0] + bars[1] + ']')
+    print ('[{}]%'.format(charge_percent))
+    
+battery_charge(0)
+battery_charge(5)
+battery_charge(11)
+battery_charge(25)
+battery_charge(76)
+battery_charge(90)
+battery_charge(100)
